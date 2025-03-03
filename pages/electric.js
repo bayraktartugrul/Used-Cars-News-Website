@@ -7,7 +7,7 @@ export default function ElectricPage() {
     {
       id: 1,
       title: "Tesla Model 3 Prices Rising in Used Car Market",
-      excerpt: "Used Tesla Model 3 prices have increased by 15% in the UK over the last 6 months, showing strong demand for electric vehicles.",
+      excerpt: "Used Tesla Model 3 prices have increased by 15% over the last 6 months, showing strong demand for electric vehicles.",
       image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89",
       date: "2024-03-20",
       category: "Electric"
@@ -15,7 +15,7 @@ export default function ElectricPage() {
     {
       id: 2,
       title: "BMW i4 vs Tesla Model 3: Used Market Comparison",
-      excerpt: "A detailed comparison of two popular electric vehicles in the UK's used car market: BMW i4 and Tesla Model 3.",
+      excerpt: "A detailed comparison of two popular electric vehicles in the used car market: BMW i4 and Tesla Model 3.",
       image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
       date: "2024-03-19",
       category: "Electric"

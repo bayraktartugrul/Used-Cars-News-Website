@@ -79,7 +79,7 @@ def get_ai_summary(content):
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a professional automotive journalist specializing in the UK used car market. Create a concise summary of the article in 2-3 paragraphs, focusing on market insights, price trends, and key information for UK car buyers."
+                    "content": "You are a professional automotive journalist specializing in the used car market. Create a concise summary of the article in 2-3 paragraphs, focusing on market insights, price trends, and key information for car buyers."
                 },
                 {
                     "role": "user",

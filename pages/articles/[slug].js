@@ -14,7 +14,7 @@ export default function ArticlePage({ slug }) {
   return (
     <Layout>
       <Head>
-        <title>{article.title} | Used Cars UK</title>
+        <title>{article.title} | Used Cars</title>
         <meta name="description" content={article.excerpt} />
         {article.keywords?.length > 0 && (
           <meta name="keywords" content={article.keywords.join(', ')} />

@@ -3,12 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
-      'cardealermagazine.co.uk',
       'images.unsplash.com',
-      'cdn.cardealermagazine.co.uk',
-      'www.cardealermagazine.co.uk',
-      'i.dailymail.co.uk',
-      'static.cardealermagazine.co.uk'
+      'i.dailymail.com',
+      'static.cardealer.com',
+      'cdn.cardealer.com',
+      'www.cardealer.com'
     ],
     unoptimized: true
   },

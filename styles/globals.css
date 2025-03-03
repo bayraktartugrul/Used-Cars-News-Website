@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Slider stilleri */
+.article-slider .slick-track {
+  display: flex !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.article-slider .slick-slide {
+  height: inherit !important;
+  > div {
+    height: 100%;
+  }
+}
+
+.article-slider .slick-prev,
+.article-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.article-slider .slick-prev:hover,
+.article-slider .slick-next:hover {
+  background: #ef4444;
+}
+
+.article-slider .slick-prev:before,
+.article-slider .slick-next:before {
+  color: #ef4444;
+}
+
+.article-slider .slick-prev:hover:before,
+.article-slider .slick-next:hover:before {
+  color: white;
+}
+
+.article-slider .slick-prev {
+  left: -20px;
+}
+
+.article-slider .slick-next {
+  right: -20px;
+}
+
+.article-slider .slick-dots {
+  bottom: -35px;
+}
+
+.article-slider .slick-dots li button:before {
+  color: #d1d5db;
+}
+
+.article-slider .slick-dots li.slick-active button:before {
+  color: #ef4444;
+}
+
+/* Dark mode */
+.dark .article-slider .slick-prev,
+.dark .article-slider .slick-next {
+  background: #1f2937;
+}
+
+.dark .article-slider .slick-prev:hover,
+.dark .article-slider .slick-next:hover {
+  background: #ef4444;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ef4444;
+  font-size: 40px;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ef4444;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ef4444;
+}
+
+.dark .article-slider .slick-prev,
+.dark .article-slider .slick-next {
+  background: rgba(31, 41, 55, 0.9);
+}
+
+.article-slider .slick-prev:hover,
+.article-slider .slick-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.dark .article-slider .slick-prev:hover,
+.dark .article-slider .slick-next:hover {
+  background: rgba(31, 41, 55, 1);
+}
+
+.article-slider .slick-prev {
+  left: -20px;
+}
+
+.article-slider .slick-next {
+  right: -20px;
+}
+
+.article-slider .slick-dots {
+  bottom: -30px;
+}
+
+.article-slider .slick-dots li button:before {
+  color: #6b7280;
+}
+
+.dark .article-slider .slick-dots li button:before {
+  color: #9ca3af;
+}
+
+.input-field {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1;
+}
+
+.table-header {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider;
+}
+
+.table-cell {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300;
+}
+
+.status-badge {
+  @apply px-2 py-1 text-xs font-medium rounded-full;
+}
+
+.status-badge.published {
+  @apply bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300;
+}
+
+.status-badge.draft {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300;
+} 

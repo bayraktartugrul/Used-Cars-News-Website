@@ -1,42 +1,7 @@
 import Link from 'next/link'
 
 export default function Navbar({ darkMode, toggleDarkMode }) {
-  const categories = [
-    { 
-      name: 'Electric', 
-      href: '/electric', 
-      icon: 'M13 10V3L4 14h7v7l9-11h-7z' 
-    },
-    { 
-      name: 'SUV', 
-      href: '/suv', 
-      icon: 'M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z' 
-    },
-    { 
-      name: 'Budget', 
-      href: '/budget', 
-      icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z' 
-    },
-    { 
-      name: 'Luxury', 
-      href: '/luxury', 
-      icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' 
-    },
-    { 
-      name: 'Classic', 
-      href: '/classic', 
-      icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' 
-    },
-    { 
-      name: 'Guide', 
-      href: '/guide', 
-      icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253' 
-    },
-    { 
-      name: 'Market', 
-      href: '/market', 
-      icon: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z' 
-    },
+  const menuItems = [
     { 
       name: 'News', 
       href: '/news', 
@@ -46,7 +11,6 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
 
   return (
     <div className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors duration-200">
-      {/* Ana Navbar */}
       <nav className="border-b border-gray-100 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -55,28 +19,28 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                 href="/" 
                 className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-800 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
               >
-                Used Cars UK
+                Used Cars
               </Link>
             </div>
 
-            {/* Kategori Navbar - Desktop */}
+            {/* Main Navigation - Desktop */}
             <div className="hidden md:flex items-center space-x-6">
-              {categories.map((category) => (
+              {menuItems.map((item) => (
                 <Link
-                  key={category.name}
-                  href={category.href}
+                  key={item.name}
+                  href={item.href}
                   className="relative text-sm text-gray-600 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200 py-3 group flex items-center"
                 >
                   <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={category.icon} />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={item.icon} />
                   </svg>
-                  <span className="whitespace-nowrap">{category.name}</span>
+                  <span className="whitespace-nowrap">{item.name}</span>
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-red-600 to-red-800 transform scale-x-0 transition-transform duration-200 group-hover:scale-x-100" />
                 </Link>
               ))}
             </div>
 
-            {/* Sağ Taraf İkonları */}
+            {/* Right Side Icons */}
             <div className="flex items-center space-x-4">
               <button className="group p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-full transition-colors duration-200">
                 <svg className="w-5 h-5 text-gray-500 dark:text-gray-400 group-hover:text-red-600 dark:group-hover:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +74,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
         </div>
       </nav>
 
-      {/* Mobil Menü Butonu */}
+      {/* Mobile Menu Button */}
       <div className="md:hidden border-b border-gray-100 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-12">

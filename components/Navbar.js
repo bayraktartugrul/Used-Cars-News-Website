@@ -39,7 +39,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                 </Link>
               ))}
             </div>
-
+            
             {/* Right Side Icons */}
             <div className="flex items-center space-x-4">
               <button className="group p-2 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-full transition-colors duration-200">

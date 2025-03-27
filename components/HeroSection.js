@@ -12,9 +12,9 @@ export default function HeroSection() {
   }
 
   return (
-    <div className="relative bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div className="relative bg-gradient-to-b from-white to-gray-50 pt-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[90vh] flex items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-24">
           <div className="space-y-8">
             <h1 className="text-5xl font-bold text-gray-900 leading-tight">
               <span className="block">The Most Up-to-Date</span>
